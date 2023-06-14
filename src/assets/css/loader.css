@@ -1,0 +1,7 @@
+/* Import de mes feuilles de styles de composants */
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+/* Import des feuilles des styles spécifiques */
+@import "globalvars.css";
+@import "responsive.css";

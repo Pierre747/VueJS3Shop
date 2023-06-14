@@ -1,0 +1,6 @@
+/*On va définir une charte graphique en utilisant la palette de couleur propre à VueJS*/
+/*De cette façon, on ne se perd pas et on garde un thème cohérent : https://www.schemecolor.com/vue-js-logo-colors.php*/
+:root{
+    --police-blue : #34495E;
+    --mint : #41B883;
+}
