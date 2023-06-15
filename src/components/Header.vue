@@ -16,6 +16,7 @@ const redirectToHome = () => {
     <h1 class="header-title" @click="redirectToHome">My first VueJS App</h1>
     <div class="header-navigation">
       <RouterLink :to="{ name: 'home'}" class="header-navigation-item">Accueil</RouterLink>
+      <RouterLink :to="{ name: 'categories'}" class="header-navigation-item">Categories</RouterLink>
       <RouterLink :to="{ name: 'infos'}" class="header-navigation-item">Infos</RouterLink>
     </div>
     <div>
