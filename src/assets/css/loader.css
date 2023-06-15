@@ -5,3 +5,4 @@
 /* Import des feuilles des styles spécifiques */
 @import "globalvars.css";
 @import "responsive.css";
+@import "reset.css";

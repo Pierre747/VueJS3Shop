@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <div class="infos-container">
   <h1>Test technique Vue.js 3</h1>
 
   <p><strong>Objectif de l'exercice :</strong></p>
@@ -56,8 +57,61 @@
   </ul>
 
   <p>Bonne chance !</p>
+  </div>
 </template>
 
 <style scoped>
 
+.infos-container{
+  padding-top: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+  transition: 0.3s ease;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+ol {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: var(--police-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (width <= 1300px) {
+  .infos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 40px;
+  }
+}
 </style>

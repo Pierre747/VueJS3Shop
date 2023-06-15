@@ -1,12 +1,10 @@
 <script>
 import Header from "@/components/Header.vue";
 import Card from "@/components/Card.vue";
-import Footer from "@/components/Footer.vue";
-import Loader from "@/components/Loader.vue";
+import Loader from "@/components/Spinner.vue";
 
 //! Import de mes librairies !//
-import axios from "axios";
-import ScrollToTop from "@/components/ScrollToTop.vue"; // J'importe Axios pour faire mes requêtes
+import axios from "axios"; // J'importe Axios pour faire mes requêtes
 
 
 //* Définition des URLs *//
@@ -18,7 +16,7 @@ const urlCategories = `https://dummyjson.com/products/categories/${catname}`
 
 
 export default {
-  components: {ScrollToTop, Card, Footer, Header, Loader },
+  components: { Card, Header, Loader },
   data() {
     return {
       products: [],
@@ -58,7 +56,6 @@ export default {
 <template>
   <main>
     <Header :categories="categories" :catname="catname"/>
-    <ScrollToTop />
     <Loader v-if="loading" /> <!-- Affiche le Loader si loading est true -->
     <Card v-else :products="products" /> <!-- Affiche le composant Card si loading est false -->
   </main>

@@ -9,8 +9,8 @@ const props = defineProps(['products']);
       <div class="card-container">
       <h1 class="card-title">{{ product.title }}</h1>
         <div class="card-subtitle">
-      <h5>Brand : {{ product.brand }}</h5>
-      <h5>Catgory : {{ product.category }}</h5>
+      <h5>{{ product.brand }}</h5>
+      <h5>{{ product.title }}</h5>
     </div>
     <img class="card-pic" :src="product.thumbnail ? product.thumbnail : '../assets/images/nopic.webp'" alt="pic" />
     <!-- J'utilise une expression ternaire pour vérifier si product.thumbnail existe -->
@@ -35,12 +35,14 @@ const props = defineProps(['products']);
   border-radius: 20px;
   padding: 20px;
   transition: 0.3s ease;
+  line-height: 25px;
 }
 .card:hover{
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 .card-title{
   font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
 }
 img {
   height: 100px;
@@ -50,6 +52,10 @@ img {
 .card-details{
   text-decoration: none;
   color: inherit;
+}
+.card-price{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 </style>
