@@ -3,6 +3,7 @@
 </script>
 
 <template>
+  <div class="style-container">
   <div class="infos-container">
   <h1>Test technique Vue.js 3</h1>
 
@@ -58,24 +59,35 @@
 
   <p>Bonne chance !</p>
   </div>
+  </div>
 </template>
 
 <style scoped>
+
+.style-container{
+  background-color: var(--police-blue);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 80vh;
+}
 
 .infos-container{
   padding-top: 40px;
   margin: 0 auto;
   max-width: 1200px;
   transition: 0.3s ease;
+  color: whitesmoke;
+  line-height: 22px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 45px;
   margin-bottom: 20px;
 }
 
 strong {
   font-weight: bold;
+  font-size: 25px;
 }
 
 p {
@@ -112,6 +124,12 @@ a:hover {
     justify-content: center;
     align-items: baseline;
     padding: 40px;
+  }
+}
+
+@media (width <= 600px){
+  .infos-container{
+    line-height: normal;
   }
 }
 </style>

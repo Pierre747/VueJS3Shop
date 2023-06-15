@@ -34,7 +34,7 @@ export default {
   <div class="categories-container">
 <h1>Categories</h1>
   <ul v-for="category in categories.sort()" :key="category">
-    <RouterLink :to="{ path: `products/category/${ category }`, component: Category}"><li>{{ category.charAt(0).toUpperCase() + category.slice(1) }}</li></RouterLink>
+    <RouterLink :to="{ path: `products/category/${ category }`, component: Category}" class="category-item"><li>{{ category.charAt(0).toUpperCase() + category.slice(1) }}</li></RouterLink>
   </ul>
   </div>
 </template>
@@ -49,8 +49,27 @@ h1{
 .categories-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: normal;
   align-items: center;
   line-height: 25px;
+  background-color: var(--mint);
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  height: 80vh;
+}
+
+.category-item{
+  text-decoration: none;
+  color: inherit;
+}
+
+.categories-container li{
+  transition: 0.3s ease;
+  padding: 7px;
+  border-radius: 14px;
+}
+.categories-container li:hover{
+  background-color: whitesmoke;
+
 }
 </style>
