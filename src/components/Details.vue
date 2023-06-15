@@ -155,6 +155,8 @@ input:nth-of-type(5):checked ~ main#carousel {
   text-align: center;
   line-height: 33px;
   background-color: #41b883;
+  min-height: 470px;
+  padding-bottom: 20px;
 }
 
 .detail-title{
@@ -175,6 +177,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   background-color: var(--police-blue);
   border-radius: 5px;
   padding: 3px;
+  margin-top: 20px;
 }
 .detail-navigation:hover{
   transform: scale(1.1);
