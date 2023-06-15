@@ -55,7 +55,8 @@ h1{
   background-color: var(--mint);
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
-  height: 80vh;
+  min-height: 1015px;
+  padding-bottom: 20px;
 }
 
 .category-item{

@@ -68,7 +68,8 @@
   background-color: var(--police-blue);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  height: 80vh;
+  min-height: 1015px;
+  padding-bottom: 20px;
 }
 
 .infos-container{
@@ -77,7 +78,7 @@
   max-width: 1200px;
   transition: 0.3s ease;
   color: whitesmoke;
-  line-height: 22px;
+  padding-bottom: 20px;
 }
 
 h1 {
